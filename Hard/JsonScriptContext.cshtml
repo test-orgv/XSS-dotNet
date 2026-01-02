@@ -1,0 +1,7 @@
+@{
+    var j = Context.Request.Query["j"];
+}
+<script>
+var obj = JSON.parse('{ "x": "@Html.Raw(j)" }');
+document.write(obj.x);
+</script>

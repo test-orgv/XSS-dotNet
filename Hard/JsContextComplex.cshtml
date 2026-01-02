@@ -1,0 +1,11 @@
+@{
+    var x = Context.Request.Query["x"];
+}
+<script>
+function run(){
+  let v = '@Html.Raw(x)';
+  document.getElementById("o").innerHTML = v;
+}
+</script>
+<div id="o"></div>
+<button onclick="run()">Run</button>

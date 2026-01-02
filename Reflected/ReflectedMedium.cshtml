@@ -1,0 +1,7 @@
+@{
+    var q = Context.Request.Query["q"];
+    if (q.ToString().Length < 50)
+    {
+        <div>@Html.Raw(q)</div>
+    }
+}

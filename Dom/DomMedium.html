@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<div id="out"></div>
+<script>
+const q = new URLSearchParams(location.search).get("q");
+if(q){
+ document.getElementById("out").innerHTML = q;
+}
+</script>
